@@ -12,6 +12,52 @@
     <p>Bringing the right technology to you</p>
   </header>
 
+  <!-- Option A: Inline SVG as your landing hero -->
+<section style="margin:0;padding:0;min-height:100vh;display:grid;place-items:center;background:#0b1220;">
+  <svg
+    width="1200"
+    height="700"
+    viewBox="0 0 1200 700"
+    role="img"
+    aria-label="Enova Consulting Ltd landing image"
+    xmlns="http://www.w3.org/2000/svg"
+    style="max-width: min(100%, 1200px); height: auto; box-shadow: 0 10px 40px rgba(0,0,0,.25); border-radius: 18px;"
+  >
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#0ea5e9"/>
+        <stop offset="100%" stop-color="#0f172a"/>
+      </linearGradient>
+      <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.35)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </radialGradient>
+      <filter id="soft">
+        <feGaussianBlur stdDeviation="35" />
+      </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="700" fill="url(#bg)"/>
+
+    <!-- Soft spotlight -->
+    <circle cx="600" cy="260" r="260" fill="url(#glow)" filter="url(#soft)"/>
+
+    <!-- Simple mark -->
+    <g transform="translate(560 170)">
+      <circle cx="40" cy="40" r="40" fill="rgba(255,255,255,0.18)"/>
+      <circle cx="40" cy="40" r="26" fill="rgba(255,255,255,0.35)"/>
+      <circle cx="40" cy="40" r="14" fill="white"/>
+    </g>
+
+    <!-- Text -->
+    <g fill="white" font-family="Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" text-anchor="middle">
+      <text x="600" y="360" font-size="56" font-weight="700" letter-spacing="0.5">Enova Consulting Ltd</text>
+      <text x="600" y="420" font-size="28" opacity="0.95">Bringing the right technology to you</text>
+      <text x="600" y="640" font-size="16" opacity="0.75">© Enova Consulting Ltd., Guildford</text>
+    </g>
+  </svg>
+</section>
   <section id="software-development">
     <h2>Software Development</h2>
     <p>Our software development services help you plan, specify, set up and maintain a system or website in the cloud…</p>
